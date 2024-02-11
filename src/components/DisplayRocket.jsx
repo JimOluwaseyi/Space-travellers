@@ -1,5 +1,5 @@
-import React, { useEffect } from "react";
 import "../styleComponents/DisplayRocket.css";
+import { useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { fetchRocketData } from "../redux/rocket/rocketSlice";
 import { reserveRocket, cancelRocket } from "../redux/rocket/rocketSlice";
@@ -9,14 +9,14 @@ const DisplayRocket = () => {
   const dispatch = useDispatch();
   useEffect(() => {
     dispatch(fetchRocketData());
-  }, []);
+  }, [dispatch]);
 
   const handleReserved = (id) => {
-    const data = dispatch(reserveRocket(id));
+     dispatch(reserveRocket(id));
   };
 
   const handleCancel = (id) => {
-    const data = dispatch(cancelRocket(id));
+  dispatch(cancelRocket(id));
   };
   return (
     <>

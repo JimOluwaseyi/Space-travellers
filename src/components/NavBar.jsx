@@ -1,4 +1,3 @@
-import React from "react";
 import "../styleComponents/Navbar.css";
 import { Link } from "react-router-dom";
 
@@ -7,7 +6,7 @@ const NavBar = () => {
     <section className="navbarContainer">
       <div className="navImage">
         <img src="../src/image/planet.png" alt="" />
-        <span>Space Traveler's Hub</span>
+        <span>Space Travelers Hub</span>
       </div>
 
       <ul className="navLinks">

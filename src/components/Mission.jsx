@@ -1,4 +1,3 @@
-import React from "react";
 import { useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
 import { fetchMissionData } from "../redux/mission/missionSlice";
@@ -9,7 +8,7 @@ const Mission = () => {
   const dispatch = useDispatch();
   useEffect(() => {
     dispatch(fetchMissionData());
-  }, []);
+  }, [dispatch]);
 
   return (
     <div>
