@@ -1,0 +1,16 @@
+.profileContainer {
+  display: flex;
+  gap: 200px;
+  margin: 30px 100px;
+}
+
+.profileSubDiv h2 {
+  margin-bottom: 10px;
+}
+
+.missionBorder p {
+  border: 1px solid grey;
+  list-style-type: none;
+  padding: 20px;
+  width: 600px;
+}
